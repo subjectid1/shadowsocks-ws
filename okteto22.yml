@@ -1,0 +1,14 @@
+name: chat
+autocreate: true
+image: okteto/node:10
+command: bash
+sync:
+  - .:/usr/src/app
+forward:
+  - 8080:80
+environment:
+  environment: development
+  METHOD: rc4  
+  KEY: 170826   
+
+  ## will be replaced by the value of $USER or by "peter" if the the variable USER doe not exist   DBPASSWORD: ## will be given the value of $DBPASSWORD if it exists
