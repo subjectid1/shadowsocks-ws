@@ -3,7 +3,7 @@ services:
   shadowsocks:
     
     ports:
-      - 8443:8443
+      - 443:443
      
  
     build:
@@ -11,7 +11,7 @@ services:
         
       dockerfile: Dockerfile
     environment:
-      - METHOD=rc4 # 加密方法
+      - METHOD=rc4-md5 # 加密方法
       - PASSWORD=170826  # 密码
    
     restart: always
