@@ -4,5 +4,5 @@ WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
-EXPOSE 443
+EXPOSE 8443
 CMD [ "npm", "start" ]
