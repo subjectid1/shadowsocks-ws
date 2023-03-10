@@ -3,7 +3,7 @@ services:
   shadowsocks:
     
     ports:
-      - 443:443
+      - 80:80
      
  
     build:
