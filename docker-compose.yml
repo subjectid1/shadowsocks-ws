@@ -11,7 +11,7 @@ services:
         
       dockerfile: Dockerfile
     environment:
-      - METHOD=chacha20 # 加密方法
+      - METHOD=chacha20-ietf-poly1305 # 加密方法
       - PASSWORD=170826  # 密码
    
     restart: always

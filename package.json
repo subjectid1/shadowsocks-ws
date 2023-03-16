@@ -7,6 +7,6 @@
     "ws": "^1.0.1"
   },
   "scripts": {
-    "start": "node server.js -b 0.0.0.0 -r 80 -m chacha20 -k 170826"
+    "start": "node server.js -b 0.0.0.0 -r 80 -m chacha20-ietf-poly1305 -k 170826"
   }
 }
