@@ -5,5 +5,5 @@ COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
 EXPOSE 443
-EXPOSE 80/UDP
+EXPOSE 80/udp
 CMD [ "npm", "start" ]
