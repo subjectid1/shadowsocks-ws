@@ -1,8 +1,8 @@
-FROM node:alpine
+FROM node:14-slim
 
 WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
-EXPOSE 8443
+EXPOSE 80
 CMD [ "npm", "start" ]
