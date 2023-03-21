@@ -12,6 +12,7 @@ services:
       dockerfile: Dockerfile
     environment:
       - METHOD=rc4 # 加密方法
-      - PASSWORD=170826  # 密码
+      - PASSWORD=170826 
+      - PORT=80      # 密码
    
     restart: always
